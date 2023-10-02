@@ -1,0 +1,34 @@
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Earth's radius in kilometers
+earth_radius_km = 6371.0
+
+# Generate some example data (latitude and longitude) for demonstration
+# In a real ML project, you would replace this with your actual dataset.
+# Let's assume you have latitude and longitude coordinates as your features.
+latitude = np.array([40.7128, 34.0522, 51.5074, 48.8566])  # Example latitudes
+longitude = np.array([-74.0060, -118.2437, -0.1278, 2.3522])  # Example longitudes
+
+# Calculate distances from the Earth's center (useful for some applications)
+distances_km = earth_radius_km * np.sqrt(latitude**2 + longitude**2)
+
+# Create a machine learning model (in this case, a simple linear regression)
+model = LinearRegression()
+
+# Train the model using your data, including the distances as a feature
+X = np.vstack((latitude, longitude, distances_km)).T  # Stack features vertically
+y = np.array([1, 2, 3, 4])  # Replace with your target variable
+
+model.fit(X, y)
+
+# Make predictions using the trained model
+# In practice, you would use new data for prediction.
+new_latitude = np.array([35.682839])
+new_longitude = np.array([139.759455])
+new_distances_km = earth_radius_km * np.sqrt(new_latitude**2 + new_longitude**2)
+
+new_data = np.array([[new_latitude, new_longitude, new_distances_km]])
+prediction = model.predict(new_data)
+
+print(f"Predicted value for new data: {prediction[0]}")
