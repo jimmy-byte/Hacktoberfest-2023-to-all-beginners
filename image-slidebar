@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the slider */
+        .slider-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #slider-image {
+            width: 300px;
+            height: 200px;
+        }
+
+        #slider {
+            width: 80%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <img id="slider-image" src="image1.jpg" alt="Image Slider">
+        <input type="range" id="slider" min="1" max="3" step="1" value="1">
+    </div>
+
+    <script>
+        // JavaScript for the slider
+        const slider = document.getElementById('slider');
+        const sliderImage = document.getElementById('slider-image');
+
+        slider.addEventListener('input', () => {
+            // Get the value of the slider
+            const sliderValue = parseInt(slider.value);
+
+            // Update the image source based on the slider value
+            sliderImage.src = `image${sliderValue}.jpg`;
+        });
+    </script>
+</body>
+</html>
