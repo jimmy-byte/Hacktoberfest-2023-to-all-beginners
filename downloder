@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Downloader</title>
+</head>
+<body>
+    <h1>Welcome to the PDF Downloader</h1>
+    <p>Click the button below to download a PDF file:</p>
+    
+    <a href="your-pdf-file.pdf" download>
+        <button>Download PDF</button>
+    </a>
+</body>
+</html>
