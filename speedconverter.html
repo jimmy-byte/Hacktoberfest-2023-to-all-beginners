@@ -1,0 +1,16 @@
+
+
+<p>
+  <label>MPH</label>
+  <input id="inputMPH" type="number" placeholder="MPH"
+  oninput="speedConverter(this.value)"
+  onchange="speedConverter(this.value)">
+</p>
+<p>KPH: <span id="outputKPH"></span></p>
+
+
+/* When the input field receives input, convert the value from mph to kph */
+function speedConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKPH").innerHTML = valNum * 1.609344;
+}s
