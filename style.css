@@ -1,0 +1,233 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ff69b4; /* Pinkish-red color for section titles */
+  margin-bottom: 20px;
+}
+
+/* Header styles */
+#header {
+  background-color: #222; /* Dark gray background */
+  color: #fff;
+  padding: 20px 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-list ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-bar ul li a:hover{
+    color: #ff3385;
+}
+
+/* Hero Section styles */
+#hero {
+  background-image: url("your-hero-image.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Pinkish-red button color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #ff3385; /* Darker pinkish-red on hover */
+}
+
+/* Service Section styles */
+#services {
+  background-color: #333; /* Dark background */
+  padding: 40px 0;
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-item .icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Projects Section styles */
+#projects {
+  background-color: #111; /* Darker background */
+  padding: 40px 0;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.project-info {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.project-img img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the max height as needed */
+}
+
+/* About Section styles */
+#about {
+  background-color: #333; /* Dark background */
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Section styles */
+#contact {
+  background-color: #222; /* Dark gray background */
+  color: #fff;
+  padding: 40px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  margin-bottom: 20px;
+  text-align: left; /* Reset text alignment */
+}
+
+.contact-item .icon img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  display: inline-block; /* Make the text inline */
+}
+
+.contact-info h1 {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin-bottom: 5px; /* Add spacing between title and details */
+}
+
+.contact-info h2 {
+  font-size: 1rem; /* Adjust the font size as needed */
+  text-align: left;
+}
+
+/* Footer styles */
+/* Footer styles */
+#footer {
+  background-color: #111; /* Darker background */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.brand {
+  display: inline;
+}
+
+.brand h1 {
+  display: inline;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin-right: 20px; /* Add spacing between the brand name and icons */
+}
+
+.social-icon {
+  display: inline;
+  margin-top: 20px; /* Add spacing between brand and icons */
+}
+
+.social-item {
+  margin: 0 10px;
+}
+
+.social-item a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-item a:hover img, .fa-twitter {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+.col-right p{
+    margin-bottom: 20px;
+}
+
